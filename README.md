@@ -1,6 +1,6 @@
-# Workspace Picker
+# Omorbit
 
-An AeroSpace-inspired workspace picker for the Omarchy bar. It keeps a compact current-workspace indicator and opens a scrollable list of 36 fixed destinations: numeric workspaces `1`–`9` and `0`, followed by named workspaces `A`–`Z`.
+Your workspaces, in orbit. Omorbit is an AeroSpace-inspired workspace picker for the Omarchy bar. It keeps a compact current-workspace indicator and opens a scrollable list of 36 fixed destinations: numeric workspaces `1`–`9` and `0`, followed by named workspaces `A`–`Z`.
 
 ## Features
 
@@ -28,7 +28,7 @@ pacman -Q hyprland
 Review the repository, then run the interactive installer:
 
 ```sh
-omarchy plugin add https://github.com/sean35mm/omarchy-workspace-picker.git --enable
+omarchy plugin add https://github.com/sean35mm/omorbit.git --enable
 ```
 
 This adds a standalone widget and prompts for placement, with the left section as the default. It does not replace the stock workspace widget. To use it as a replacement, disable the stock widget after installation:
@@ -44,8 +44,8 @@ If another custom workspace widget is active, disable that widget by its own plu
 Click the workspace indicator to open or close the picker. Click any row to switch to that workspace. The shell lifecycle can also be tested directly:
 
 ```sh
-omarchy-shell shell summon io.github.sean35mm.workspace-picker '{}'
-omarchy-shell shell hide io.github.sean35mm.workspace-picker
+omarchy-shell shell summon io.github.sean35mm.omorbit '{}'
+omarchy-shell shell hide io.github.sean35mm.omorbit
 ```
 
 Plugin files normally hot-reload. If discovery becomes stale, run `omarchy-shell shell rescanPlugins`; only if that is insufficient, run `omarchy restart shell`.
@@ -89,10 +89,10 @@ Removing the marked block and reloading restores the active Omarchy defaults; pl
 
 ## Remove
 
-First remove only the marked Workspace Picker block from `~/.config/hypr/bindings.lua` if you added it, then run `hyprctl reload` and `hyprctl configerrors`. Remove the plugin interactively:
+First remove only the marked Omorbit block from `~/.config/hypr/bindings.lua` if you added it, then run `hyprctl reload` and `hyprctl configerrors`. Remove the plugin interactively:
 
 ```sh
-omarchy plugin remove io.github.sean35mm.workspace-picker
+omarchy plugin remove io.github.sean35mm.omorbit
 ```
 
 If you disabled the stock widget, restore it explicitly:

@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
-  "id": "io.github.sean35mm.workspace-picker",
-  "name": "Workspace Picker",
+  "id": "io.github.sean35mm.omorbit",
+  "name": "Omorbit",
   "version": "0.1.0",
   "author": "sean35mm",
   "license": "MIT",
-  "description": "An AeroSpace-inspired workspace picker for Omarchy.",
+  "description": "Your workspaces, in orbit.",
   "kinds": [
     "bar-widget"
   ],
@@ -13,8 +13,8 @@
     "barWidget": "Workspaces.qml"
   },
   "barWidget": {
-    "displayName": "Workspace Picker",
-    "description": "Pick numeric or named Hyprland workspaces from the Omarchy bar.",
+    "displayName": "Omorbit",
+    "description": "Navigate numeric and named Hyprland workspaces from the Omarchy bar.",
     "category": "Compositor",
     "allowMultiple": false,
     "defaultSection": "left"

@@ -1,6 +1,6 @@
 -- Optional: manually append this block to ~/.config/hypr/bindings.lua.
 -- Do not source this repository file; plugin removal would leave a broken path.
--- BEGIN Workspace Picker keybindings
+-- BEGIN Omorbit keybindings
 
 -- Named workspaces A-Z. Moving follows the window, matching numeric workspaces.
 local workspace_letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
@@ -20,4 +20,4 @@ for index = 1, #workspace_letters do
   o.bind("SUPER + ALT + SHIFT + " .. letter, "Move window to workspace " .. letter, hl.dsp.window.move({ workspace = workspace }))
 end
 
--- END Workspace Picker keybindings
+-- END Omorbit keybindings

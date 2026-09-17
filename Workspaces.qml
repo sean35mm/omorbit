@@ -8,7 +8,7 @@ import qs.Ui
 
 BarWidget {
   id: root
-  moduleName: "io.github.sean35mm.workspace-picker"
+  moduleName: "io.github.sean35mm.omorbit"
 
   property bool popupOpen: false
   readonly property bool opened: popupOpen
